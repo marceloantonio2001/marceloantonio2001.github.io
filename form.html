@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+<HEAD>
+    <script src= "jquery-1.11.1.js"></script>
+    <script src= "jquery.maskedinput.js"></script>
+    <TITLE>TURISMO BRASIL</TITLE>
+    <meta charset="UNICODE">
+</HEAD>
+<BODY bgcolor= "#CDCDCD">
+    <center><img src="TURBR.jpg"></center>
+    <hr WIDTH=50% ALIGN=center></hr>
+    <center><img src="FRASE.jpg"></center>
+
+    <span style= "position:absolute; left:22%;top:230px"><a href="index.html"><img src="B_INICIO.jpg"></a></Span>
+    <span style= "position:absolute; left:36%;top:230px"><a href="emp.html"><img src="B_EMP.jpg"></a></Span>
+    <span style= "position:absolute; left:51% ;top:230px"><a href="form.html"><img src="B_FORM.jpg"></a></Span>
+    <Span style= "position:absolute; left:66% ;top:230px"><a href="calc.html"><img src="B_CALC.jpg"></a></Span>
+    
+
+    <Span style= "position: absolute; left:10%;top:290px">
+      
+    <form Action= "mailto:destino@gmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        
+        <legend>FORMULÁRIO DE COTAÇÃO</legend>
+          <input type= "radio" name="trip" value= "Ida e volta">Ida e Volta
+          <input type= "radio" name="trip" value= "Somente ida">Somente Ida
+          <input type= "radio" name="trip" value= "Vários destinos">Vários destinos<br><br>
+        
+          Saio de
+          <select>
+           <option>São Paulo</option>
+           <option>Rio de Janeiro</option>
+           <option>Brasília</option>
+           <option>Salvador</option>
+           <option>Fortaleza</option>
+           <option>Belo Horizonte</option>
+           <option>Manaus</option>
+           <option>Curitiba</option>
+           <option>Recife</option>
+           <option>Goiânia</option>
+           <option>Bélem </option>
+           <option>Porto Alegre</option>
+          </select>
+        
+          Viajo para
+          <select>
+           <option>São Paulo</option>
+           <option>Rio de Janeiro</option>
+           <option>Brasília</option>
+           <option>Salvador</option>
+           <option>Fortaleza</option>
+           <option>Belo Horizonte</option>
+           <option>Manaus</option>
+           <option>Curitiba</option>
+           <option>Recife</option>
+           <option>Goiânia</option>
+           <option>Belém</option>
+           <option>Porto Alegre</option>     
+        </select> 
+        
+           <label for= "DATA">Data de SAÍDA:</label>
+           <input type= "date" id= "DATA Ida" name= "data de saída">
+           <label for= "DATA">Data de RETORNO:</label>
+           <input type="date" id= "DATA Volta" name= "data de retorno">
+           <br><br>
+        
+        Pessoas
+        <select Size= "1" Name= "Pessoas 1">
+          <optgroup label= "Adultos">
+            <option value= "A partir de 18 anos - 1 pessoa">A partir de 18 anos - 1 pessoa
+            <option value= "A partir de 18 anos - 2 pessoas">A partir de 18 anos - 2 pessoas
+            <option value= "A partir de 18 anos - 3 pessoas">A partir de 18 anos - 3 pessoa
+            <option value= "A partir de 18 anos - 4 pessoas">A partir de 18 anos - 4 pessoas
+          </optgroup>    
+        </select>  
+        
+        Menor de Idade (GRUPO 1)
+        <select Size= "1" Name= "Grupo 1">
+         <optgroup label= "Crianças">
+            <option value= "De 2 à 17 anos - 1 pessoa">De 2 à 17 anos
+            <option value= "De 2 à 17 anos - 2 pessoas">De 2 à 17 anos
+            <option value= "De 2 à 17 anos - 3 pessoas">De 2 à 17 anos
+            <option value= "De 2 à 17 anos - 4 pessoas">De 2 à 17 anos
+         </optgroup>
+         </select>
+        
+         Menor de Idade (GRUPO 2)
+         <select Size= "1" Name= "Grupo 2">
+          <optgroup label= "Bebês">
+             <option value= "Menos de 2 anos - 1 pessoa">Menos de 2 anos - 1 pessoa
+             <option value= "Menos de 2 anos - 2 pessoa">Menos de 2 anos - 2  pessoa
+             <option value= "Menos de 2 anos - 3 pessoa">Menos de 2 anos - 3 pessoa
+             <option value= "Menos de 2 anos - 4 pessoa">Menos de 2 anos - 4 pessoa
+          </optgroup>
+          </select><br><br>
+        
+         Classe
+          <select>
+            <option>Primeira</option>
+            <option>Executiva</option>
+            <option>Premium</option>
+            <option>Econômica</option>
+          </select><br><br>
+            </option>
+          
+          
+         Nome:<input type= "text" name= "nome" size= "30" maxlength= "100"required>
+      
+         E-mail:<input type="text" name= "email"size= "25" maxlength= "100"required>
+     
+         CPF.:<input type= "text" id= "campoCPF" name= "cpf">
+
+         Tel.:<input type= "text" id= "campoTel" name= "tel"><br><br>
+
+         <input type= "checkbox" name= "receber_info"checked>Desejo receber novidades deste site em meu e-mail.<br><br>
+         
+         <input type=submit value= "Enviar Formulário"><br><br>
+
+         <input type=reset value= "Apagar tudo">
+    </form>     
+      </fieldset>
+    </Span>
+   
+  <script>
+    jQuery(function($){
+      $("#campoCPF").mask("999.999.999-99");
+    
+      $("#campoTel").mask("(99)9999‐9999");});
+  </script>
+  
+    
+
+
+</BODY>
+
+</html>
